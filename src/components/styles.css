@@ -43,3 +43,50 @@
   transform: scale(0.8);
   box-shadow: 0 0 5px rgb(1, 1, 18);
 }
+
+.lstostaf {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+.lstostaf__single {
+  display: flex;
+  width: 30%;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 0 5px rgb(1, 1, 18);
+}
+
+.lstostaf__single--title {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  font-size: 25px;
+}
+
+.lstostaf__single--title:focus {
+  outline: none;
+}
+
+.icon {
+  margin-left: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .input {
+    width: 95%;
+  }
+
+  .lstostaf {
+    width: 95%;
+  }
+
+  .lstostaf__single {
+    width: 100%;
+  }
+}
